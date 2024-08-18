@@ -1,0 +1,46 @@
+
+.background{
+    background: linear-gradient(red , green);
+  }
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background for better text readability */
+    border-radius: 10px;
+    padding: 0px 20px 20px;
+    // display: flex;
+  }
+  
+  ion-card {
+    background: rgba(0, 0, 0, 0.8); /* Slightly darker card background for contrast */
+    border-radius: 10px;
+    color: #fff;
+    // display: flex;
+  }
+  
+  ion-card-header {
+    text-align: center;
+    // margin-bottom: 20px;
+  }
+  
+  ion-card-title {
+    font-size: 3.8em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+  
+  p {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+  

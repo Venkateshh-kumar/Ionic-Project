@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Contact Us</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h2>Contact Us</h2>
+  <p>If you have any questions or need support, please fill out the form below:</p>
+
+  <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+    <ion-item>
+      <ion-label position="floating">Name</ion-label>
+      <ion-input type="text" [(ngModel)]="contact.name" name="name" required></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" [(ngModel)]="contact.email" name="email" required></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating">Message</ion-label>
+      <ion-textarea [(ngModel)]="contact.message" name="message" required></ion-textarea>
+    </ion-item>
+    
+    <ion-button expand="full" type="submit">Submit</ion-button>
+  </form>
+
+  <ion-list>
+    <ion-item>
+      <ion-icon name="call-outline" slot="start"></ion-icon>
+      <ion-label>Phone: 9876543212</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="location-outline" slot="start"></ion-icon>
+      <ion-label>Address: Prestige Blue Chief, Software Park, Banglore</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-toast
+    *ngIf="showSuccessMessage"
+    message="Thank you! Your message has been sent successfully."
+    duration="2000"
+    color="success"
+  ></ion-toast>
+</ion-content>

@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-img src="/assets/download.jpg" class="toolbar-image"></ion-img>
+    <ion-title>IONIC APP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <div class="sidebar">
+      <ion-list>
+        <ion-item [routerLink]="['/home']">
+          <ion-label>Home</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/aboutus']">
+          <ion-label>About Us</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/products']">
+          <ion-label>Products</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/login']">
+          <ion-label>Login</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/contactus']">
+          <ion-label>Contact Us</ion-label>
+        </ion-item>
+      </ion-list>
+    </div>
+
+    <div class="content">
+      <div class="flex-container">
+        <div class="flex-item">
+          <h2>Welcome to Ascendion</h2>
+          <p>
+            Ascendion is a leading technology company committed to driving innovation and excellence in every aspect of our operations. We pride ourselves on our dynamic working culture, where continuous learning and collaboration fuel our success.
+          </p>
+          <p>
+            Our focus is on fostering an inclusive environment where creativity thrives, and all employees are empowered to contribute to impactful projects. Whether it's working on the latest tech solutions or enhancing our clients' experiences, we ensure that our teams are always at the cutting edge of technology and innovation.
+          </p>
+        </div>
+        <div class="flex-item">
+          <h3>Our Core Features</h3>
+          <ul>
+            <li>Innovation-Driven Projects</li>
+            <li>Inclusive and Collaborative Culture</li>
+            <li>Focus on Employee Well-Being</li>
+            <li>Client-Centric Solutions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
